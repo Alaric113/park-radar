@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
     : [25.0478, 121.517]; // 台北車站
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen h-full bg-gray-100">
       <header className="bg-white shadow-sm p-4">
         <h1 className="text-2xl font-bold text-gray-800">停車場雷達</h1>
       </header>
