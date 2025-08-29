@@ -5,7 +5,7 @@ import './index.css';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="App h-min-screen" style={{height:'100vh'}}>
       <HomePage />
     </div>
   );

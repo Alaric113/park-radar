@@ -17,20 +17,20 @@ const HomePage: React.FC = () => {
     );
   }
 
-  
-
   const center: [number, number] = location
     ? [location.latitude, location.longitude]
     : [25.0478, 121.517]; // 台北車站
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100" style={{ height: '100vh' }}>
       <header className="bg-white shadow-sm p-4">
         <h1 className="text-2xl font-bold text-gray-800">停車場雷達</h1>
       </header>
 
       <main className="p-4">
-        <Map center={center} zoom={15} />
+        <div style={{ height: '100%', width: '100%' }}>
+          <Map center={center} zoom={15} />
+        </div>
 
         {location && (
           <div className="mt-4 p-4 bg-white rounded-lg shadow">
