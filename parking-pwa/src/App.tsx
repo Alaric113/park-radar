@@ -1,6 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import HomePage from './pages/HomePage';
+import RadarMode from './pages/RadarMode'
 import './index.css';
 
 const App: React.FC = () => {
