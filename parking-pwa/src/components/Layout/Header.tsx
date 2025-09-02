@@ -21,14 +21,7 @@ const Header: React.FC<HeaderProps> = ({ currentMode, onModeChange }) => {
     <header className="bg-white shadow-md border-b">
       <div className="max-w-6xl mx-auto px-4 py-3">
         {/* Logo 和標題 */}
-        <div className="flex items-center justify-between mb-4">
-          <h1 className="text-xl font-bold text-s-800">
-            🎯 停車雷達
-          </h1>
-          <div className="text-sm text-gray-500">
-            Park Radar
-          </div>
-        </div>
+        
         
         {/* 模式切換導航 */}
         <nav className="flex justify-center">

@@ -35,12 +35,9 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-gray-50">
+    <div className="h-screen flex flex-col bg-gray-50 w-screen">
       {/* 固定頂部導航 */}
-      <Header 
-        currentMode={viewMode} 
-        onModeChange={setViewMode} 
-      />
+      
       
       {/* 主要內容區域 */}
       <main className="flex-1 relative overflow-hidden">
@@ -58,6 +55,10 @@ const HomePage: React.FC = () => {
           </motion.div>
         </AnimatePresence>
       </main>
+      <Header 
+        currentMode={viewMode} 
+        onModeChange={setViewMode} 
+      />
     </div>
   );
 };
