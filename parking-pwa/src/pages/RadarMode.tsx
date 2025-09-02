@@ -1,6 +1,6 @@
 // src/pages/RadarMode.tsx
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+//import { motion } from 'framer-motion';
 import { useGeolocation } from '../hooks/useGeolocation';
 
 const RadarMode: React.FC = () => {
@@ -12,19 +12,10 @@ const RadarMode: React.FC = () => {
     <div className="h-full bg-slate-900 relative overflow-hidden">
       {/* 雷達圓形顯示區域 */}
       <div className="absolute inset-4 rounded-full border border-green-400/30">
-        <RadarDisplay 
-          userPosition={location}
-          parkingData={parkingData}
-          scanRange={scanRange}
-        />
+        
       </div>
       
-      {/* HUD 資訊面板 */}
-      <HUDInfoPanel 
-        scanRange={scanRange}
-        onRangeChange={setScanRange}
-        parkingCount={parkingData.length}
-      />
+      
     </div>
   );
 };
