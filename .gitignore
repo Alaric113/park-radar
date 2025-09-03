@@ -1,2 +1,8 @@
 # Local Netlify folder
 .netlify
+# .gitignore inside your dist/ directory
+node_modules/
+tests/
+assets/large-images/
+# .gitignore 在你的專案根目錄
+/dist/
