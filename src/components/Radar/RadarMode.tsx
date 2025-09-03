@@ -47,7 +47,7 @@ const StaticMapContainer: React.FC<{
         keyboard={false}
         attributionControl={false}
       >
-        <TileLayer url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png" />
+        <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" />
         
         {/* 同步地圖中心 */}
         <MapCenterSync center={center} />
